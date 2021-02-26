@@ -6,7 +6,7 @@ import (
 	"golang.org/x/text/language"
 )
 
-// Middleware is used to parse language from Accept-Language header or custom cookie from
+// Middleware is used to parse language from Accept-Language header or custom cookie
 // from current request and pass best matching language via context to next http.Handler.
 type Middleware struct {
 	matcher language.Matcher
