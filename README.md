@@ -1,5 +1,9 @@
 # Language package for Golang
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/muonsoft/language.svg)](https://pkg.go.dev/github.com/muonsoft/language)
+[![Go Report Card](https://goreportcard.com/badge/github.com/muonsoft/language)](https://goreportcard.com/report/github.com/muonsoft/language)
+[![CI](https://github.com/muonsoft/language/actions/workflows/main.yml/badge.svg)](https://github.com/muonsoft/language/actions/workflows/main.yml)
+
 Package language provides HTTP middleware for parsing language from HTTP request and passing it via context.
 
 ## Example of reading language from Accept-Language header

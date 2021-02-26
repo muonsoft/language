@@ -14,6 +14,7 @@ type Middleware struct {
 	next    http.Handler
 }
 
+// MiddlewareOption is used to set up Middleware.
 type MiddlewareOption func(middleware *Middleware)
 
 // ReadFromCookie can be used to set up middleware to read language value from cookie with given name.
