@@ -6,6 +6,14 @@
 
 Package language provides HTTP middleware for parsing language from HTTP request and passing it via context.
 
+## How to install
+
+Run the following command to install the package:
+
+```bash
+go get -u github.com/muonsoft/language
+```
+
 ## Example of reading language from Accept-Language header
 
 ```golang
