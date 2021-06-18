@@ -2,6 +2,7 @@ package language
 
 import "golang.org/x/text/language"
 
+// Tag is an alias for language.Tag.
 type Tag = language.Tag
 
 // Equal compares language tags by base ISO 639 language code.
