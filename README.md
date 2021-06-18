@@ -53,7 +53,7 @@ import (
     "net/http"
     "net/http/httptest"
     
-    "golang.org/x/text/language"
+    "github.com/muonsoft/language"
 )
 
 func main() {
