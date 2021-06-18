@@ -7,7 +7,6 @@ import (
 	"testing"
 
 	"github.com/muonsoft/language"
-	textlanguage "golang.org/x/text/language"
 )
 
 func TestMiddleware_ServeHTTP(t *testing.T) {
@@ -15,7 +14,7 @@ func TestMiddleware_ServeHTTP(t *testing.T) {
 		name             string
 		request          *http.Request
 		options          []language.MiddlewareOption
-		expectedLanguage textlanguage.Tag
+		expectedLanguage language.Tag
 	}{
 		{
 			name:             "no options",

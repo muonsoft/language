@@ -35,7 +35,7 @@ func ReadFromAcceptHeader() MiddlewareOption {
 }
 
 // SupportedLanguages is used to set up list of supported languages. See language.NewMatcher() for details.
-func SupportedLanguages(tags ...language.Tag) MiddlewareOption {
+func SupportedLanguages(tags ...Tag) MiddlewareOption {
 	return func(middleware *Middleware) {
 		middleware.matcher = language.NewMatcher(tags)
 	}
@@ -57,7 +57,7 @@ func NewMiddleware(next http.Handler, options ...MiddlewareOption) *Middleware {
 		setOption(middleware)
 	}
 	if middleware.matcher == nil {
-		middleware.matcher = language.NewMatcher([]language.Tag{language.English})
+		middleware.matcher = language.NewMatcher([]Tag{English})
 	}
 	if len(middleware.readers) == 0 {
 		middleware.readers = append(middleware.readers, readFromAcceptLanguageHeader)

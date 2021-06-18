@@ -2,8 +2,11 @@ package language
 
 import "golang.org/x/text/language"
 
+// Tag is an alias for language.Tag.
+type Tag = language.Tag
+
 // Equal compares language tags by base ISO 639 language code.
-func Equal(tag1, tag2 language.Tag) bool {
+func Equal(tag1, tag2 Tag) bool {
 	base1, _, _ := tag1.Raw()
 	base2, _, _ := tag2.Raw()
 
